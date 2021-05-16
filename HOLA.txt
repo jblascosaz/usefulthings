@@ -1,0 +1,19 @@
+AÑADIR LAS DEPENDENCIAS / LINEAS DISCONTUNIAS
+
+SCOPE PROVIDED / PARA LOS QE APUTAN A MAS DE UNO SCOPE DE LA DEPENDENCIA
+
+--
+
+PRUEBA DNS BELGIUM
+DESPLEGNANDO APACHE TOMCAT
+
+ver k cuando al desplegar en el war, la implementacion minima por defecto es capaz de devolver
+la respuesta independientemente de lo q pongamos sea un error de k no esta implementado
+
+DESCAGAR TOMCAT
+EJECUTAR DNS
+
+VERSION SOLO DMSBELGUIMU
+
+DNS BELGIUM DEJAR COMO ESTABA
+ARTIFACT ID Y ESO EJEJ
