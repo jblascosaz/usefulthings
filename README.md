@@ -1,8 +1,8 @@
 # usefulthings
 Useful data from internet
 
-► Guía oficial de Breeding:
-https://axie.substack.com/p/axie-bree...
+► Comprar WETH en Ronin con FIAT
+https://www.youtube.com/watch?v=mVgwiAPTMT0
 
 ► Freak's Axie Extension:
 https://chrome.google.com/webstore/de...
