@@ -20,3 +20,5 @@ https://docs.google.com/spreadsheets/...
 https://docs.google.com/spreadsheets/d/1wW-_addB3Ja4r5OOm1Rd9lX2gz1XgL0hnZTwBN_2jAc/edit#gid=1187747329
 
 https://open.spotify.com/playlist/6ogbg9BFwnSLNkNMn7NrfF?si=uF8jiCqZRpuE6U2eFWt4BQ&dl_branch=1
+
+https://open.spotify.com/playlist/7gkzLJUad4X8R4er1aFNam?si=ckZigX7vQEeYwrIsRvAG2g&dl_branch=1
