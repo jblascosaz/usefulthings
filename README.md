@@ -24,3 +24,24 @@ https://open.spotify.com/playlist/6ogbg9BFwnSLNkNMn7NrfF?si=uF8jiCqZRpuE6U2eFWt4
 https://open.spotify.com/playlist/7gkzLJUad4X8R4er1aFNam?si=ckZigX7vQEeYwrIsRvAG2g&dl_branch=1
 
 BGBF4D8F1873
+
+       public WebElement findElement(By locator) throws Exception {
+             WebElement element = null;
+             try {
+                    element = getDriver().findElement(locator);
+             } catch (Exception e) {
+                    e.printStackTrace();
+                    takeErrorScreenshot(getDriver(), "findElement");
+//                  getDriver().close();
+//                  getDriver().quit();
+                    if(debug) {
+                           throw new Exception(e);
+                    }
+                    throw new Exception("\nCan't find element "+locator);
+
+             }
+             return element;
+       }
+
+             Select nombreSelect = new Select(findElement(xpathSelect));
+             nombreSelect.selectByValue("1");
