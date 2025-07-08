@@ -1,0 +1,420 @@
+{
+    "RepairerPortal": {
+        "Login" :{
+            "UserName":"//*[@type='text']",
+            "Password":"//*[@type='password']",
+            "LogInButton":"//button[@type='button']"
+        },
+        "Header":{
+            "Notification":{
+                "Counter":"//span[@class='counterLabel']",
+                "BellIconButton":"//div[@class=\"headerButtonBody\"]/lightning-icon",
+                "MarkAsSeenButton" : "//a[text()='Tout marquer comme lu']",
+                "MessageLink" : "(//a[@class='notification-link'])[1]"
+            },
+            "MyProfile":{
+                "MyProfileButton" : "//community_user-user-profile-menu//button",
+                "LogOutButton" : "//span[@title=\"Se déconnecter\"]",
+				"MesDocuments" : "//a/span[@title='Mes documents']" 
+            },
+			"MesDocuments":{
+				"VueDeList" : "//button[contains(@title,'Sélectionner une vue de liste')]",
+				"DocType" : "//select[@name='DocumentType']",
+				"DateDebut" : "//input[@name='DateDebut']",
+				"DateFin" : "//input[@name='DateFin']",
+				"TerminerButton" : "//button[span[text()='Terminer']]"
+			}
+        },
+        "WorkOrder":{
+            "MenuActionButton" : "//lightning-button-menu[contains(@data-target-reveals,\"NouveauFactureService\")]",
+            "NewServiceInvoiceActionButton" :"//span[text()='Nouvelle Facture de Service']",
+            "ClaimNumberLabel":"//span[text()='Numéro de sinistre Assureur']",
+            "PageTitle" : "//lightning-formatted-text[@slot='primaryField']",
+			"SearchButton" :"//div[contains(@class,'search-deflectionItemSearchText')]/ancestor::ul/li[2]",
+			"SearchInput" :"//input[contains(@placeholder,'Recherche')]",
+			"PlusDactionsButton" :"//span[text()=\"Afficher plus d'actions\"]/ancestor::button",
+			"ApporteurDaffaire": "//label[text()=\"Apporteur d'affaire\"]/following-sibling::div//input",
+			"NumeroDeSinistreAssureur": "//label[text()='Numéro de sinistre Assureur']/following-sibling::div//input",
+			"MissionAssociee": "//label[text()='Mission associée']/following-sibling::div//input",
+			"DateReceptionDocFin": "//label[text()='Date de réception de document financier']/following-sibling::div//input",
+			"DateEmisionDocFin": "//label[text()=\"Date d’émission de document financier\"]/following-sibling::div//input" 
+        },
+        "NewServiceInvoiceModal":{
+            "ServiceTypeButton" : "//button[contains(@aria-label,'Type de service')]",
+            "SADServiceTypeItem" : "//span[@title='Service à domicile (SAD)']",
+            "VRServiceTypeItem" : "//span[@title='Véhicule de remplacement (VR)']",
+            "ExclTaxAmountInput" : "//input[@name='PFR_ExclVATTotalAmount__c']",
+            "SaveButton" : "//button[text()='Sauvegarder']",
+            "AlertText" : "//div[@class='slds-form-element__help']",
+            "ExclTaxesAmountWarning" :"//span[.='Détail-Montant TOTAL HT']/parent::div"
+        },
+        "WalkMe":{
+            "Player":"//div[text()='Besoin d'aide']"
+        },
+		"SAD":{
+            "NombreDeJours": "//label[text()='Nombre de jours']/following-sibling::div//input",
+			"NumeroDeContrat": "//label[text()='Numéro de Contrat']/following-sibling::div//input",
+			"DetailMontantTVA": "//label[text()='Détail-Montant TVA']/following-sibling::div//input",
+			"DetailMontantTotalTTC": "//label[text()='Détail-Montant TOTAL TTC']/following-sibling::div//input",
+			"DetailMontantTotalHT": "//label[text()='Détail-Montant TOTAL HT']/following-sibling::div//input"
+        },
+        "Accueil":{
+            "CalendarElement":"//span[text()='Fermeture' or text()='Rdv Privé']"
+        },
+        "NewContactModal":{
+            "SaveButton" : "//button[@name='SaveEdit']"
+        },
+        "NewReplacementVehicleModal":{
+            "VehicleName":"//input[@name='Name']",
+            "AccountLookup":"//label[contains(text(), 'Compte')]/ancestor::lightning-grouped-combobox//input",
+            "EnergyComboBox":"//label[contains(text(), 'Carburant')]/ancestor::lightning-combobox//button",
+            "GearBoxComboBox":"//label[contains(text(), 'Transmission')]/ancestor::lightning-combobox//button",
+            "VehicleTypeComboBox":"//label[contains(text(), 'Type de Véhicule')]/ancestor::lightning-combobox//button"
+        },        
+        "VehicleReplacement":{
+            "ModalCreate":{
+                "VehicleName":"//input[@name='Name']",
+                "AccountLookup":"//label[contains(text(), 'Compte')]/ancestor::lightning-grouped-combobox//input",
+                "EnergyComboBox":"//label[contains(text(), 'Carburant')]/ancestor::lightning-combobox//button",
+                "GearBoxComboBox":"//label[contains(text(), 'Transmission')]/ancestor::lightning-combobox//button",
+                "VehicleTypeComboBox":"//label[contains(text(), 'Type de Véhicule')]/ancestor::lightning-combobox//button"
+            },
+            "PageEdit":{
+                "FleetExitDateInput":"//input[@name='NOB_FleetWithdrawalDate__c']"
+            }
+        },
+        "Planning":{
+            "ModalNewAvailability": {
+                "StartDateComboxBox" : "(//label[contains(text(), 'Heure')]/ancestor::lightning-combobox//button)[1]",
+                "EndDateComboBox" :"(//label[contains(text(), 'Heure')]/ancestor::lightning-combobox//button)[2]"
+            }
+        },
+		"Rapports": {
+			"RapportsButton": "//button[text()='Rapports']",
+			"FacturesEtAvoirsLink": "//a[@title='Factures et avoirs']",
+			"VisualiseurDeRapportFrame": "//iframe[@title='Visualiseur de rapport']",
+			"FacturesEtAvoirsTitle": "//h1/span[@title='Factures et avoirs (R,S,C,A) v2']",
+			"WidgetDeTypeGraphique": "//div[@aria-label='Widget de type Graphique']",
+			"SuiviDesMissionsEtRDVLink": "//a[@title='Suivi des missions et RDV']",
+			"SuiviDesMissionsEtRDVTitle": "//h1/span[@title='Suivi des Missions et RDV']",
+			"LastTbody": "(//tbody)[last()]"    
+		},
+    "MyPrefikar": {
+        "Login" :{
+            "UserName":"//input[@id='username']",
+            "Password":"//input[@id='password']",
+            "LogInButton":"//input[@id='Login']"
+        },
+        "AppNavMenu":{
+            "ShowNavMenuButton":"//button[@title='Afficher le menu de navigation']",
+            "CaseMenuItem":"//a[@data-itemid='Case']"
+        },
+        "Case":{
+            "ListViewPage":{
+                "NewCaseButton":"//div[@id='brandBand_1']//div[@title='Nouveau']"
+            },
+            "NewCasePage":{
+                "InsuranceClaimNumberInput":"//label[text()='Numéro de sinistre Assureur']/parent::div//input",
+                "InsurerLookup": "//label[contains(text(),'affaire')]/parent::lightning-grouped-combobox//input",
+                "OfferLookup": "//label[contains(text(),'offre')]/parent::lightning-grouped-combobox//input",
+                "LookupOption" : "%%LOOKUP%%/following::div[contains(@class,'slds-listbox_vertical')]//lightning-base-combobox-item//lightning-base-combobox-formatted-text[contains(@title,'%%VALUE%%')]",
+                "OriginButton":"//label[text()='Origine de la requête']/parent::div//button",
+                "DropdownListOption":"%%BUTTON%%/following::div[contains(@class,'slds-listbox_vertical')]//lightning-base-combobox-item//span[@title='%%VALUE%%']",
+                "ContactLookup" : "//label[text()='Nom du contact']/parent::lightning-grouped-combobox//input",
+                "IncidentDateInput" : "//label[text()='Date']/following::input[@name='NOB_IncidentDateandTime__c'][1]",
+                "IncidentTimeInput" : "//label[text()='Heure']/following::input[@name='NOB_IncidentDateandTime__c'][1]",
+                "DriverLookup" : "//label[text()='Conducteur']/parent::lightning-grouped-combobox//input",
+                "DamageTypeTextArea" : "//label[text()='Type de dommages']/parent::lightning-textarea//textarea",
+                "VehicleVRNInput" : "//label[contains(text(),'immatriculation ')]/parent::div//input",
+                "VehicleModelInput" : "//label[text()='Modèle']/parent::div//input",
+                "VehicleBrandButton" : "(//div[@class='windowViewMode-maximized active lafPageHost']/descendant::label[text()='Marque']/parent::div//button)[1]",
+                "SaveButton" : "//button[@name='SaveEdit']"
+            },
+            "ReadModePage":{
+                "Path":{
+                    "Status" : "(//a[@title='%%STATUS%%' and @aria-selected='%%SELECTED%%'])[last()]/parent::li",
+                    "CurrentStatus" : "//div[@class='windowViewMode-maximized active lafPageHost']/descendant::a[@title='%%STATUS%%']/parent::li[contains(@class,'current')]",
+                    "SetCurrentStatusButton" : "//span[text()='Marquer Statut en cours']"
+                },
+                "WorkOrderRelatedList":{
+                    "WorkOrderNumberText" : "(//div[@class='windowViewMode-maximized active lafPageHost']/descendant::h2//span[@title='Missions']/ancestor::article//records-hoverable-link//slot)[last()]",
+                    "StatusText": "//div[@class='windowViewMode-maximized active lafPageHost']/descendant::article[@aria-label='%%WO_NUM%%']//dd[1]//lst-formatted-text//span"
+                },
+                "DriverRelatedList":{
+                    "FullNameText" : "//div[@class='windowViewMode-maximized active lafPageHost']/descendant::span[text()='Nom complet']"
+                },
+                "PickUpAddressRelatedList":{
+                    "StreetText" : "//div[@data-target-selection-name='sfdc:RecordField.Case.NOB_PickupStreet__c']" 
+                }
+            }
+        },
+        "Insured":{
+            "NewInsuredModal":{
+                "LastNameInput" : "//input[@name='lastName']",
+                "FirstNameInput" : "//input[@name='firstName']",
+                "EmailInput" : "//input[@name='Email']",
+                "PhoneInput" : "//input[@name='Phone']",
+                "MobilePhoneInput" : "//input[@name='MobilePhone']",
+                "AddressStreet" : "(//textarea[@name='street'])[1]",
+                "AddressZipCode" : "(//input[@name='postalCode'])[1]",
+                "AddressCity" : "(//input[@name='city'])[1]",
+                "SaveButton" : "//div[contains(@class,'modal')]//button[@name='SaveEdit']",
+                "ModalContainer" : "//div[@class='modal-container slds-modal__container']"
+            }
+        },
+        "RepairInvoice":{
+            "Page.Create":{
+                "TotalAmountIncVAT":"//input[@name='PFR_InclVATTotalAmount__c']",
+                "TotalAmountExVAT":"//input[@name='PFR_ExclVATTotalAmount__c']",
+                "VATAmount":"//input[@name='PFR_VATAmount__c']",
+                "AmountExVATCoveredByInsurer":"//input[@name='PFR_ExclVATTotalAmountPayableByInsurer__c']"
+                
+            }
+        },
+        "BaseComponent":{
+            "ModalContainer" : "//div[@class='modal-container slds-modal__container']"
+        },
+        "AppointmentComponent":{
+            "Container":"//div[@class='windowViewMode-maximized active lafPageHost']/descendant::div[@Class='cNOB_LC47_PriseDeRendezVousRulesEngine']",
+            "SlotRadioButton":"(//div[@class='windowViewMode-maximized active lafPageHost']/descendant::span[@title='%%SERVICE%%']/ancestor::section[1]//table//tbody//tr[%%LINE%%]//td//span[@class='slds-radio'])[%%OCCURRENCE%%]",
+            "SelectButton":"//div[@class='windowViewMode-maximized active lafPageHost']/descendant::button[text()='Sélectionner'][not (@disabled)]",
+            "ConfirmButton":"//div[@class='windowViewMode-maximized active lafPageHost']/descendant::button[text()='Oui']",
+            "Modal":{
+                "SlotRadioButton":"(//span[@title=\"%%SERVICE%%\"]/ancestor::section[1]//table//tbody//tr[%%LINE%%]//td//span[@class=\"slds-radio\"])[%%OCCURRENCE%%]"
+            }
+
+        },
+        "BusinessProvider":{
+            "Form":{
+                "Name":"//input[@name=\"Name\"]",
+                "LegalEntity":"//input[@name=\"NOB_LegalEntity__c\"]",
+                "Trigram":"//input[@name=\"PRE_Trigram__c\"]",
+                "Status":"//label[contains(text(), \"Statut\")]/ancestor::lightning-combobox//button",
+                "ParentAccount":"//label[contains(text(), 'Compte principal')]/ancestor::lightning-grouped-combobox//input",
+                "GTACode":"//input[@name=\"NOB_GTACode__c\"]",
+                "Email":"//input[@name=\"NOB_EmailAddress__c\"]",
+                "Phone":"//input[@name=\"Phone\"]",
+                "DiscountPercentage":"//input[@name=\"NOB_DiscountPercent__c\"]",
+                "TransmissionMethod":"//label[contains(text(),\"Mode de transmission\")]/ancestor::lightning-combobox//button",
+                "BonusRate":"//input[@name=\"NOB_BonusPercent__c\"]",
+                "BaseCommissionRate":"//input[@name=\"NOB_NobilasCommission__c\"]",
+                "AlphascaleDiscountRate":"//input[@name=\"PRE_AccTauxReductionAlphaScale__c\"]",
+                "PremiumDiscountRate":"//input[@name=\"PRE_AccTauxReductionPremium__c\"]",
+                "SendingFrequency":"//label[contains(text(), \"Cadence de l'envoi\")]/ancestor::lightning-combobox//button"
+            }
+        },
+        "Garage":{
+            "Form":{
+                "Name":"//input[@name=\"Name\"]",
+                "SIRET":"//input[@name=\"LocalReferenceNumber__c\"]",
+                "LegalEntity":"//input[@name=\"NOB_LegalEntity__c\"]",
+                "Phone":"//input[@name=\"Phone\"]",
+                "Email":"//input[@name=\"NOB_EmailAddress__c\"]",
+                "Street":"//textarea[@name=\"street\"]",
+                "ZipCode":"//input[@name=\"postalCode\"]",
+                "City":"//input[@name=\"city\"]",
+                "State":"//input[@name=\"province\"]",
+                "LegalForm":"//label[contains(text(), \"Forme juridique Siège Social\")]/ancestor::lightning-combobox//button",
+                "QuotationSoftware":"//label[contains(text(), \"Logiciel de chiffrage\")]/ancestor::lightning-combobox//button",
+                "EADSoftware":"//label[contains(text(), \"Logiciel EAD\")]/ancestor::lightning-combobox//button",
+                "DmsSoftware":"//label[contains(text(), \"Logiciel DMS\")]/ancestor::lightning-combobox//button",
+                "PaintingPartners":"//label[contains(text(), \"Partenaires\")]/ancestor::lightning-combobox//button",
+                "VatNumber":"//input[@name=\"VATNumber__c\"]",
+                "AnnualRevenue":"//input[@name=\"NOB_AnnualTotal__c\"]",
+                "ProductiveEmployees":"//input[@name=\"NOB_ProductiveEmployees__c\"]",
+                "TotalEmployees":"//input[@name=\"NOB_TotalEmployees__c\"]",
+                "DarvaId":"//input[@name=\"NOB_DarvaIdentifier__c\"]",
+                "AccountingSoftware":"//input[@name=\"NOB_AccountingSoftware__c\"]",
+                "StraighteningBench":"//input[@name=\"NOB_StraighteningBench__c\"]",
+                "LiftBridge":"//input[@name=\"NOB_LiftBridge__c\"]",
+                "SpotWelder":"//input[@name=\"NOB_SpotWelder__c\"]",
+                "BodyshopSurfaceArea":"//input[@name=\"NOB_BodyshopSurfaceArea__c\"]",
+                "NumberOfReplacementVehicle":"//input[@name=\"NOB_NumberofEligibleReplacementVehicle__c\"]",
+                "NumberofPaintBooths":"//input[@name=\"NOB_NumberofPaintBooths__c\"]",
+                "PaintingMake":"//input[@name=\"NOB_Make__c\"]",
+                "Rate1":"//input[@name=\"NOB_Rate1__c\"]",
+                "Rate2":"//input[@name=\"NOB_Rate2__c\"]",
+                "Rate3":"//input[@name=\"NOB_Rate3__c\"]",
+                "RateI1":"//input[@name=\"NOB_RateI1__c\"]",
+                "RateI2":"//input[@name=\"NOB_RateI2__c\"]",
+                "RateI3":"//input[@name=\"NOB_RateI3__c\"]",
+                "PaintingRate":"//input[@name=\"NOB_PaintRate__c\"]",
+                "StatusReason":"//label[contains(text(), \"Raison de statut\")]/ancestor::lightning-combobox//button",
+                "ServiceCapabilities":"//span[@title=\"%%VALUE%%\"]",
+                "DarvaStandard":"//label[contains(text(), \"Norme DARVA\")]/ancestor::lightning-combobox//button",
+                "EadIdentifier":"//input[@name=\"NOB_EADIdentifier__c\"]",
+                "InvoicingEmail":"//input[@name=\"NOB_BillingMail__c\"]",
+                "ReasonStatus":"//label[contains(text(),\"Raison de statut\")]/ancestor::lightning-combobox//button"
+            }
+        },
+        "Document":{
+            "Form":{
+                "Account":"//label[contains(text(), 'Réparateur')]/ancestor::lightning-grouped-combobox//input",
+                "Type":"//select[@name=\"DocumentType\"]",
+                "InsuranceCompany":"//select[@name=\"PRE_ParentCompAssurance\"]",
+                "StartDate":"//input[@name=\"DateDebut\"]",
+                "EndDate":"//input[@name=\"DateFin\"]"
+            }
+        },
+        "Contact":{
+            "Form":{
+                "FirstName":"//input[@name=\"firstName\"]",
+                "LastName":"//input[@name=\"lastName\"]",
+                "Status":"//label[contains(text(),\"Statut\")]/ancestor::lightning-combobox//button[contains(@class,\"combobox\")]",
+                "Role":"//div[@class='windowViewMode-maximized active lafPageHost']/descendant::span[@title=\"%%VALUE%%\"]"
+            }
+        },
+        "AccountRelationship":{
+            "Form":{
+                "Insurer":"//label[contains(text(), \"Compte Assureur\")]/ancestor::lightning-grouped-combobox//input",
+                "UsedSystem":"//label[contains(text(), \"Système Utilisé\")]/ancestor::lightning-combobox//button",
+                "ServiceCapabilities":"//span[@title=\"%%VALUE%%\"]",
+                "InterventionType":"//span[@title=\"%%VALUE%%\"]",
+                "VehicleType":"//span[@title=\"%%VALUE%%\"]"
+            }
+        },
+        "NegotiateRate":{
+            "Form":{
+                "StartDate":"//input[@name=\"NOB_StartDate__c\"]",
+                "BonusRate":"//input[@name=\"PRE_TauxBonus__c\"]",
+                "BaseCommissionRate":"//input[@name=\"PRE_TauxCommissionBase__c\"]",
+                "AlphascaleDiscountRate":"//input[@name=\"PRE_TauxReductionAlphaScale__c\"]",
+                "PremiumDiscountRate":"//input[@name=\"PRE_TauxReductionPremium__c\"]"
+            }
+        },
+        "InvoicingRate":{
+            "Form":{
+                "StartDate":"//input[@name=\"NOB_StartDate__c\"]",
+                "T1Rate":"//input[@name=\"NOB_T1__c\"]",
+                "T2Rate":"//input[@name=\"NOB_T2__c\"]",
+                "T3Rate":"//input[@name=\"NOB_T3__c\"]",
+                "TPRate":"//input[@name=\"NOB_TP__c\"]",
+                "TI1Rate":"//input[@name=\"NOB_TI1__c\"]",
+                "TI2Rate":"//input[@name=\"NOB_TI2__c\"]",
+                "TI3Rate":"//input[@name=\"NOB_TI3__c\"]",
+                "DSPRate":"//input[@name=\"NOB_DSP__c\"]",
+                "MechanicalRate":"//input[@name=\"NOB_TauxMecanique__c\"]"                
+            }
+        },
+        "ObjectView":{
+            "Edit" : "//div[@class='windowViewMode-maximized active lafPageHost']/descendant::button[@name=\"Edit\"]"
+        }
+
+
+    },
+    "WalkMe" :{
+        "Launcher" : "//div[@id=\"walkme-player\"]",
+        "ConsentModalAcceptButton" : "//button[text()=\"Accepter\"]"
+    },
+	"ASP" :{
+		"Login" :{
+            "UserName":"//input[contains(@id,'username')]",
+            "Password":"//input[contains(@id,'password')]",
+            "LogInButton":"//button[@id='btnLogin']"
+		}
+    },
+	
+    "Common":{
+        "LookupOption" : "%%PARENT%%/following::div[contains(@class,'slds-listbox_vertical')]//lightning-base-combobox-item//lightning-base-combobox-formatted-text[@title=\"%%VALUE%%\"]",
+        "ComboBoxOption" :"%%PARENT%%/following::div[contains(@class,'slds-listbox_vertical')]//lightning-base-combobox-item//span[@title=\"%%VALUE%%\"]",
+        "SelectOption" :"%%PARENT%%//option[text()=\"%%VALUE%%\"]",
+        "PageEdit":{
+            "SaveButton" : "//button[@name='SaveEdit']"
+        },
+        "Form":{
+            "Save" : "//button[@name='SaveEdit']"
+        },
+        "ObjectView":{
+            "Edit" : "//div[@class='windowViewMode-maximized active lafPageHost']/descendant::button[@name=\"Edit\"]"
+        }
+    },
+    "Bris2Glace":{
+        "B2G_FR":{
+            "Page.InformationStep":{
+                "VehicleVRNInput":"//input[@id=//label[text()='Votre immatriculation :']/@for]",
+                "ConsentDataPrivacyCheckbox":"//span[@class='slds-checkbox_faux']"            
+            },
+            "Page.DiagnosticStep":{
+                "DiagnosticTab":"//button[@class='slds-button slds-button_brand' and text()='2. Diagnostic']",
+                "QuestionTitleText":"//strong[text()='Quels éléments sont endommagés ?']",
+                "DamageImage":"//lightning-layout//img",
+                "WindshieldImage" : "//lightning-formatted-text[text()='Pare-brise']",
+                "HasADASystemSelect":"//span[text()=\"Votre véhicule est-il équipé d'un système d'aide à la conduite (ADAS) ?\"]//ancestor::flowruntime-picklist-input-lwc//select",
+                "DamageTypeSelect":"//span[text()=\"Quels types de dommages sur votre pare-brise ?\"]//ancestor::flowruntime-picklist-input-lwc//select",
+                "DamageSizeSelect":"//span[text()=\"Quel type d'impact sur votre pare-brise ?\"]//ancestor::flowruntime-picklist-input-lwc//select",
+                "TimeToRepairTxt":"//b"
+            },
+            "Page.PartnerStep":{
+                "PartnerTab":"//button[@class='slds-button slds-button_brand' and text()='3. Prestataire']",
+                "SearchInput":"//input[@type='search']",
+                "SearchOption":"//p[text()=\"%%VALUE%%\"]",
+                "MapiFrame":"//iframe[@title='Mappage de Réparateurs']",
+                "MapResults":"//ul[@class='slds-coordinates__list']",
+                "MapResultRepairerAddress":"//span[contains(text(),\"%%VALUE%%\")]//following-sibling::span",
+                "SelectedRepairerAddress": "//div[contains(text(),\"%%VALUE%%\")]",
+                "BookSlotButton":"//button[@title='Prendre RDV']"
+
+            },
+            "Page.RepairerSlots":{
+                "AvailableSlotsComponent":"//lightning-layout[@class='slds-grid slds-grid_align-center slds-wrap']",
+                "AvailableSlot":"//a//lightning-formatted-date-time"
+            },
+            "Page.Appointement":{
+                "Tab":"//button[@class='slds-button slds-button_brand' and text()='4. Rendez-vous']",
+                "DateTxt":"//h3[@title='Date de rendez-vous']/following-sibling::div//p//lightning-formatted-text",
+                "RepairerAddressTxt":"(//h3[@title='%%VALUE%%']/following-sibling::div//p)[1]",
+                "InterventionTypeTxt":"//h3[@title='Intervention']/following-sibling::div//p",
+                "TimeToRepairTxt":"//h3[@title='Durée de la réparation']/following-sibling::div//p",
+                "Vrn":"//h3[@title='Votre immatriculation :']/following-sibling::div//p"
+            },
+            "Common":{
+                "NextButton":"//button[text()='Suivant']",
+                "PreviousButton":"//button[text()='Précédent']"
+            }
+        },
+        "B2G_ES":{
+            "Page.InformationStep":{
+                "VehicleVRNInput":"//input[@placeholder=\"Ejemplo: 1234BBC o M1234TJ\"] ",
+                "ConsentDataPrivacyCheckbox":"//span[text()='He leído y acepto la política de protección de datos']",
+                "ConsentCookiesButton" : "//button[text()='Aceptar']"           
+            },
+            "Page.DiagnosticStep":{
+                "DiagnosticTab":"//button[@class='slds-button slds-button_brand' and text()='2. Reparación o Sustitución']",
+                "QuestionTitleText":"//strong[text()='¿Qué luna está dañada?']",
+                "DamageImage":"//lightning-layout//img",
+                "WindshieldImage" : "//lightning-formatted-text[text()='Parabrisas']",
+                "HasADASystemSelect":"//span[text()=\"¿Está tu vehículo equipado con un sistema de asistencia al conductor (ADAS)?\"]//ancestor::flowruntime-picklist-input-lwc//select",
+                "DamageTypeSelect":"//span[text()=\"¿Qué tipo de daño tiene tú parabrisas?\"]//ancestor::flowruntime-picklist-input-lwc//select",
+                "DamageSizeSelect":"//span[text()=\"¿Cómo es el impacto en tú parabrisas?\"]//ancestor::flowruntime-picklist-input-lwc//select",
+                "TimeToRepairTxt":"//b"
+            },
+            "Page.PartnerStep":{
+                "PartnerTab":"//button[@class='slds-button slds-button_brand' and text()='3. Selecciona el taller']",
+                "SearchInput":"//input[@type='search']",
+                "SearchOption":"//p[text()=\"%%VALUE%%\"]",
+                "MapiFrame":"//iframe[@title='Mapa de Réparateurs']",
+                "MapResults":"//ul[@class='slds-coordinates__list']",
+                "MapResultRepairerAddress":"//span[contains(text(),\"%%VALUE%%\")]//following-sibling::span",
+                "SelectedRepairerAddress": "//div[contains(text(),\"%%VALUE%%\")]",
+                "BookSlotButton":"//button[@title='Reserva una cita']"
+
+            },
+            "Page.RepairerSlots":{
+                "AvailableSlotsComponent":"//lightning-layout[@class='slds-grid slds-grid_align-center slds-wrap']",
+                "AvailableSlot":"//a//lightning-formatted-date-time"
+            },            
+            "Page.Appointement":{
+                "Tab":"//button[@class='slds-button slds-button_brand' and text()='4. Cita']",
+                "DateTxt":"//h3[@title='Día de la cita']/following-sibling::div//p//lightning-formatted-text",
+                "RepairerAddressTxt":"(//h3[@title='%%VALUE%%']/following-sibling::div//p)[1]",
+                "InterventionTypeTxt":"//h3[@title='Servicio']/following-sibling::div//p",
+                "TimeToRepairTxt":"//h3[@title='Duración estimada del trabajo']/following-sibling::div//p",
+                "Vrn":"//h3[@title='Matrícula']/following-sibling::div//p"
+            },
+            "Common":{
+                "NextButton":"//button[text()='Siguiente']",
+                "PreviousButton":"//button[text()='Volver al paso anterior']"
+            }
+        }
+    }
+}
