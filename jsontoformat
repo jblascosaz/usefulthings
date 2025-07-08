@@ -98,7 +98,8 @@
 			"SuiviDesMissionsEtRDVLink": "//a[@title='Suivi des missions et RDV']",
 			"SuiviDesMissionsEtRDVTitle": "//h1/span[@title='Suivi des Missions et RDV']",
 			"LastTbody": "(//tbody)[last()]"    
-		},
+		}
+	},
     "MyPrefikar": {
         "Login" :{
             "UserName":"//input[@id='username']",
